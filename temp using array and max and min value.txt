@@ -1,0 +1,40 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+ int main()
+  {
+  int a[5];
+  //clrscr();
+//tf = [tc*1.8]+32
+   for(int i=0;i<5;i++)
+   {cout<<"\n"<<"Temperature  in Centigrade  of day "<<i+1<<"= ";
+     cin>>a[i];
+     cout<< "\n";
+  }
+  cout<<"\n\nStored Data in Array: ";
+   for(int i=0;i<5;i++)
+   {
+     cout<<"Temperature  in Fahrenheit  of day "<<i+1<<"= "<<(a[i] *1.8) + 32<< "\n";
+   }
+  int max=a[0];
+  int min=a[0];
+   for (int i=0;i<5;i++)
+   {
+   	if (min> a[i])
+   {
+   	min = a[i];
+   }
+   
+   	if (max< a[i])
+   {
+   	max = a[i];
+   }
+   }
+   cout<< "Max temperature is " << max << "\n";
+   cout<< "Min temperature is " << min; 
+   
+  
+   getch();
+  }
+  
+  
